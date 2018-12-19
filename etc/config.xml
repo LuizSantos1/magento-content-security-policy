@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+
+<config>
+    <modules>
+        <Inviqa_ContentSecurityPolicy>
+            <version>0.1.0</version>
+        </Inviqa_ContentSecurityPolicy>
+    </modules>
+    <global>
+        <models>
+            <contentsecuritypolicy>
+                <class>Inviqa_ContentSecurityPolicy_Model_Observer</class>
+            </contentsecuritypolicy>
+        </models>
+        <helpers>
+            <contentsecuritypolicy>
+                <class>Inviqa_ContentSecurityPolicy_Helper</class>
+            </contentsecuritypolicy>
+        </helpers>
+    </global>
+    <frontend>
+        <events>
+            <http_response_send_before>
+                <observers>
+                    <contentsecuritypolicy>
+                        <type>singleton</type>
+                        <class>Inviqa_ContentSecurityPolicy_Model_Observer</class>
+                        <method>setCSPHeader</method>
+                    </contentsecuritypolicy>
+                </observers>
+            </http_response_send_before>
+        </events>
+    </frontend>
+<adminhtml>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                        <config>
+                        <children>
+                            <contentsecuritypolicy>
+                                <title>Content Security Policy</title>
+                            </contentsecuritypolicy>
+                        </children>
+                        </config>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</adminhtml>
+</config>

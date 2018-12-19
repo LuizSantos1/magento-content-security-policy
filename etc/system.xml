@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<config>
+    <sections>
+        <contentsecuritypolicy module="contentsecuritypolicy" translate="label">
+            <class>separator-top</class>
+            <label>Content Security Policy</label>
+            <tab>advanced</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>110</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>0</show_in_website>
+            <show_in_store>0</show_in_store>
+            <groups>
+                <csp module="contentsecuritypolicy" translate="label comment">
+                    <label>General Settings</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>10</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>0</show_in_store>
+                    <fields>
+                        <test translate="label comment">
+                            <label>Current Status</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>Inviqa_ContentSecurityPolicy_Block_Adminhtml_Status</frontend_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </test>
+                        <temp_csp>
+                            <label>Content-Security-Policy-Report-Only:</label>
+                            <frontend_type>textarea</frontend_type>
+                            <width>100</width>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <comment>Intended only for debugging a policy</comment>
+                        </temp_csp>
+                    </fields>
+                </csp>
+            </groups>
+        </contentsecuritypolicy>
+    </sections>
+</config>
