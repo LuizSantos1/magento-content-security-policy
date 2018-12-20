@@ -18,7 +18,7 @@ Allows the defining and refining of Content-Security-Policy Headers and sets the
 5. View and allow urls in report-uri.com wizard and then generate a policy
 ![alt text](screenshots/using-wizard.png "Using the Wizard in report-uri.com")
 
-6. Add the generated policy to the modules config together with a ReportOnly repot-uri
+6. Add the generated policy to the modules config together with a ReportOnly report-uri
 
 7. Repeat steps 5-6 until happy the policy is not reporting violations that are false positives
 
