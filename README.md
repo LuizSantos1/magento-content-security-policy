@@ -7,6 +7,7 @@ Allows the defining and refining of Content-Security-Policy Headers and sets the
 1. Install the module. By default this will not set a header
 2. Login / Create an account a report-uri.com and create a subdomain
 3. Generate a wizard url for you subdomain
+![alt text](screenshots/creating-a-wizzard-uri.png "Cretating a Wizard URI in Report-uri.com")
 4. Add the wizard-url together with a restrictive header to the modules config
 5. View and allow urls in report-uri.com wizard and then generate a policy
 6. Add the generated policy to the modules config together with a ReportOnly repot-uri
