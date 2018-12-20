@@ -9,6 +9,7 @@ Allows the defining and refining of Content-Security-Policy Headers and sets the
 3. Generate a wizard url for you subdomain
 ![alt text](screenshots/creating-a-wizzard-uri.png "Cretating a Wizard URI in Report-uri.com")
 4. Add the wizard-url together with a restrictive header to the modules config
+![alt text](screenshots/setting-temp-policy.png "Setting the policy in the model")
 5. View and allow urls in report-uri.com wizard and then generate a policy
 6. Add the generated policy to the modules config together with a ReportOnly repot-uri
 7. Repeat steps 5-6 until happy the policy is not reporting violations that are false positives
