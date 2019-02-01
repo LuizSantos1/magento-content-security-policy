@@ -1,0 +1,15 @@
+{
+    "name": "inviqa/magento-content-security-policy",
+    "license": "proprietary",
+    "type": "magento-module",
+    "description": "Content Security Policy for Magento 1",
+    "require": {
+        "magento-hackathon/magento-composer-installer": "^3.0"
+    },
+    "authors": [
+        {
+            "name": "Nathaniel McHugh",
+            "email": "nmchugh@inviqa.com"
+        }
+    ]
+}

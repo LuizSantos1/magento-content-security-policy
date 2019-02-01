@@ -1,0 +1,7 @@
+# Inviqa - Magento 1 Content Security Policy
+
+# Code
+app/code/community/Inviqa/ContentSecurityPolicy    app/code/community/Inviqa/ContentSecurityPolicy
+
+# Init File
+app/etc/modules/Inviqa_ContentSecurityPolicy.xml    app/etc/modules/Inviqa_ContentSecurityPolicy.xml
