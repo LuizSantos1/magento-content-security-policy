@@ -20,7 +20,7 @@
     </global>
     <frontend>
         <events>
-            <http_response_send_before>
+            <controller_action_predispatch>
                 <observers>
                     <contentsecuritypolicy>
                         <type>singleton</type>
@@ -28,7 +28,7 @@
                         <method>setCSPHeader</method>
                     </contentsecuritypolicy>
                 </observers>
-            </http_response_send_before>
+            </controller_action_predispatch>
         </events>
     </frontend>
 <adminhtml>
