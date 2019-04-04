@@ -38,6 +38,6 @@ No this will only ever allow ReportOnly headers
 
 No you can set the report-uri to anything you like or not have one. However, it is recomended that you use a report-uri when developing a policy as otherwise it may kill legitimate behaviour and you may not notice.
 
-##Authors
+## Authors
 
 Author:: Nathaniel McHugh (nmchugh@inviqa.com) Author:: Ross Kinsman (rkinsman@inviqa.com)
